@@ -1,0 +1,23 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.tabs {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.tab {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  margin-right: 5px;
+}
+
+.tab.active {
+  background-color: #f1f1f1;
+  border-top: 2px solid #0078d4;
+}

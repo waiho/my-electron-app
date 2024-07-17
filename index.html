@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Hello from Electron renderer!</title>
+    <link rel="stylesheet" href="./styles.css"> <!-- Link to your external CSS file -->
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <h2>Hello from Electron renderer!</h2>
+    <!-- <p>👋</p>
+    <p id="info"></p>
+
+    <h1>Enter URL to Load</h1>
+    <input type="text" id="urlInput" placeholder="Enter URL here">
+    <button id="loadUrlButton">Load URL</button> -->
+    <div class="tabs">
+      <div class="tab active" id="tab1">User URL</div>
+      <div class="tab" id="tab2">Hardcoded URL 1</div>
+      <div class="tab" id="tab3">Hardcoded URL 2</div>
+      <div class="tab" id="tab4">Calendar</div>
+    </div>
+
   </body>
+  <script src="./renderer.js"></script>
 </html>
